@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EIA - Gestión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo EIA">
+    <a href="/">🏠 Inicio</a>
+    <a href="#">📅 Calendario</a>
+    <a href="#">👩‍🎓 Ficha de Alumnos</a>
+    <a href="#">💳 Pago de Cuotas</a>
+    <a href="#">📊 Reporte Deudores</a>
+</div>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
